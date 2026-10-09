@@ -1,0 +1,32 @@
+name = "meeting-reschedule-early"
+artifacts = ["/app/answer.json"]
+
+[metadata]
+author_name = "Shailendrasinh Zala"
+category = "Enterprise data"
+subcategory = "Email archive reasoning"
+tags = ["email-archive", "time-split", "superseded-information", "meeting"]
+difficulty = "medium"
+difficulty_explanation = "The snapshot is about 2,100 emails from 60 days of one lawyer's mailbox, with the same messages copied across several folders. The first booking in the thread is a mistake: the assistant books 3:00 PM 'following today's' meeting, on the day she writes, and is corrected within the hour to Thursday at 3:30. A reader who takes the first time mentioned, or resolves 'today' literally, gets the wrong answer, and Portland times (1:30) sit next to the Houston ones."
+solution_explanation = "Find the thread about the meeting with Mark Taylor, order it by Date header, and follow it to the last settled state before the cut: the assistant's '3:30 pm on Thursday' and Sara's note to Christian '3:30 Houston/1:30 Portland', which makes it Thursday 7 June 2001 at 15:30 Houston time. solve.sh checks the decisive email is in the mailbox and writes that answer citing it."
+verification_explanation = "A separate container with no network reads /app/answer.json and checks the date and start time exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the email that set the time or a duplicate copy of it. Missing, symlinked, malformed or oversized answers score 0."
+
+[verifier]
+timeout_sec = 300
+environment_mode = "separate"
+
+[verifier.environment]
+allow_internet = false
+build_timeout_sec = 600
+cpus = 1
+memory_mb = 2048
+
+[agent]
+timeout_sec = 1800
+
+[environment]
+allow_internet = true
+build_timeout_sec = 900
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240

@@ -1,0 +1,88 @@
+{
+  "id": "meeting-reschedule",
+  "kind": "meeting",
+  "user": "shackleton-s",
+  "title": "When does the meeting start?",
+  "person": "Sara Shackleton (Enron North America, Legal)",
+  "question": "Sara Shackleton asked for a one-hour meeting with Mark Taylor, with Christian Yoder joining by phone from Portland, to talk about Washington State PUDs. According to this mailbox at the moment above, on what date and at what Houston time is that meeting set to start?",
+  "window_days": 60,
+  "fields": {
+    "meeting_date": {"type": "date", "doc": "date of the meeting, `YYYY-MM-DD`.", "example": "YYYY-MM-DD"},
+    "start_time": {"type": "time", "doc": "start time in Houston local time, 24-hour `HH:MM`.", "example": "HH:MM"}
+  },
+  "thread_paths": [
+    "shackleton-s/all_documents/11424.",
+    "shackleton-s/all_documents/11426.",
+    "shackleton-s/all_documents/11427.",
+    "shackleton-s/all_documents/11429.",
+    "shackleton-s/all_documents/11430.",
+    "shackleton-s/all_documents/11440.",
+    "shackleton-s/all_documents/11441.",
+    "shackleton-s/all_documents/11444.",
+    "shackleton-s/all_documents/11456.",
+    "shackleton-s/all_documents/11459.",
+    "shackleton-s/all_documents/11461.",
+    "shackleton-s/all_documents/11465.",
+    "shackleton-s/all_documents/11467."
+  ],
+  "timeline": [
+    {"utc": "2001-06-04 18:12", "from": "Sara Shackleton", "path": "all_documents/11424.", "quote": "Does Mark have time in the afternoon to meet with me and Christian Yoder", "state": "requested for Thursday June 7, afternoon, no time yet"},
+    {"utc": "2001-06-05 07:34", "from": "Holly Keiser", "path": "all_documents/11426.", "quote": "I've scheduled 3:00 PM following today's Legal/Credit meeting.", "state": "Holly books 3:00 PM on the day she writes (Tue June 5): a mistake"},
+    {"utc": "2001-06-05 08:19", "from": "Sara Shackleton", "path": "all_documents/11427.", "quote": "I'd like to meet Thursday, June 7", "state": "Sara corrects the day"},
+    {"utc": "2001-06-05 08:36", "from": "Holly Keiser", "path": "all_documents/11429.", "quote": "3:30 pm on Thursday.", "state": "SET: Thu 2001-06-07 15:30 Houston"},
+    {"utc": "2001-06-05 09:06", "from": "Sara Shackleton", "path": "all_documents/11430.", "quote": "3:30 Houston/1:30 Portland.  We'll call you.", "state": "SET: Thu 2001-06-07 15:30 Houston, passed to Christian"},
+    {"utc": "2001-06-05 11:07", "from": "Christian Yoder", "path": "all_documents/11440.", "quote": "I cannot move that time.  Can we go earlier or move it to Friday?", "state": "conflict raised; Thursday 15:30 no longer workable"},
+    {"utc": "2001-06-05 11:18", "from": "Holly Keiser", "path": "all_documents/11444.", "quote": "How about 3:00 pm on Friday??", "state": "proposal: Fri 15:00"},
+    {"utc": "2001-06-05 11:19", "from": "Sara Shackleton", "path": "all_documents/11441.", "quote": "Can you reschedule please?", "state": "reschedule requested"},
+    {"utc": "2001-06-05 16:30", "from": "Sara Shackleton", "path": "all_documents/11456.", "quote": "How is 3 pm Houston/1 pm  Portland on Friday?", "state": "proposal to Christian: Fri 15:00 Houston"},
+    {"utc": "2001-06-05 17:45", "from": "Christian Yoder", "path": "all_documents/11459.", "quote": "Good.", "state": "AGREED: Fri 2001-06-08 15:00 Houston"},
+    {"utc": "2001-06-05 18:32", "from": "Sara Shackleton", "path": "all_documents/11461.", "quote": "Let's schedule this please.", "state": "asks Holly to book Friday 15:00"},
+    {"utc": "2001-06-06 07:56", "from": "Holly Keiser", "path": "all_documents/11465.", "quote": "it's on Mark's calendar (3:00 pm - Friday, June 8)", "state": "BOOKED: Fri 2001-06-08 15:00 Houston (subject shortened)"},
+    {"utc": "2001-06-06 09:30", "from": "Sara Shackleton", "path": "all_documents/11467.", "quote": "1 pm Portland time on Friday - we'll call you", "state": "Christian told the Portland time (13:00 Portland = 15:00 Houston)"}
+  ],
+  "alternatives_rejected": [
+    "Tue 2001-06-05 15:00 (Holly's first booking): she misread the day and Sara corrected it within the hour.",
+    "13:00 or 13:30: these are Portland times written for Christian; the question asks for Houston time.",
+    "Thu 2001-06-07 15:30 after Christian's conflict: superseded by the Friday agreement and Holly's calendar confirmation.",
+    "The Date headers in this corpus are rendered in Pacific time and some look implausible as Houston office hours; cut times are applied to the headers exactly as stored and stated in UTC, so the answer does not depend on them."
+  ],
+  "cuts": [
+    {
+      "slug": "meeting-reschedule-early",
+      "t_utc": "2001-06-05T10:00:00+00:00",
+      "difficulty": "medium",
+      "expected": {"meeting_date": "2001-06-07", "start_time": "15:30"},
+      "superseded": {"meeting_date": "2001-06-05", "start_time": "15:00"},
+      "decisive_paths": ["shackleton-s/all_documents/11429.", "shackleton-s/all_documents/11430."],
+      "evidence_quote": "3:30 pm on Thursday.",
+      "post_t_values": ["Friday, June 8", "3 pm Houston", "1 pm Portland", "3:00 pm on Friday"],
+      "l4_review": "All 8 hits reviewed by hand: NYMEX/COMEX exchange notices dated 31 May and 4 Jun, an internal newsletter event on 8 June, and an April ISDA email ('until about 3 pm Houston'). None concerns this meeting; they act as natural distractors, not leaks.",
+      "metadata": {
+        "difficulty_explanation": "The snapshot is about 2,100 emails from 60 days of one lawyer's mailbox, with the same messages copied across several folders. The first booking in the thread is a mistake: the assistant books 3:00 PM 'following today's' meeting, on the day she writes, and is corrected within the hour to Thursday at 3:30. A reader who takes the first time mentioned, or resolves 'today' literally, gets the wrong answer, and Portland times (1:30) sit next to the Houston ones.",
+        "solution_explanation": "Find the thread about the meeting with Mark Taylor, order it by Date header, and follow it to the last settled state before the cut: the assistant's '3:30 pm on Thursday' and Sara's note to Christian '3:30 Houston/1:30 Portland', which makes it Thursday 7 June 2001 at 15:30 Houston time. solve.sh checks the decisive email is in the mailbox and writes that answer citing it.",
+        "verification_explanation": "A separate container with no network reads /app/answer.json and checks the date and start time exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the email that set the time or a duplicate copy of it. Missing, symlinked, malformed or oversized answers score 0."
+      }
+    },
+    {
+      "slug": "meeting-reschedule-late",
+      "t_utc": "2001-06-07T14:00:00+00:00",
+      "difficulty": "medium",
+      "expected": {"meeting_date": "2001-06-08", "start_time": "15:00"},
+      "superseded": {"meeting_date": "2001-06-07", "start_time": "15:30"},
+      "decisive_paths": [
+        "shackleton-s/all_documents/11465.",
+        "shackleton-s/all_documents/11467.",
+        "shackleton-s/all_documents/11456.",
+        "shackleton-s/all_documents/11459.",
+        "shackleton-s/all_documents/11461."
+      ],
+      "evidence_quote": "3:00 pm - Friday, June 8",
+      "post_t_values": [],
+      "metadata": {
+        "difficulty_explanation": "The meeting is booked for Thursday at 3:30, then a participant in Portland has a conflict and it moves to Friday at 3 pm Houston time. The final confirmation arrives under a shortened subject line, so it is easy to miss by searching for the original subject, and the last note to the participant gives only the Portland time (1 pm), which is wrong if copied as the answer.",
+        "solution_explanation": "Follow both subject lines of the thread in date order: Christian's conflict, the Friday proposal, his 'Good.', and the assistant's confirmation 'it's on Mark's calendar (3:00 pm - Friday, June 8)'. The answer is Friday 8 June 2001 at 15:00 Houston time. solve.sh checks the confirmation email is in the mailbox and writes that answer citing it.",
+        "verification_explanation": "A separate container with no network reads /app/answer.json and checks the date and start time exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one from the emails that set the Friday time or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
+      }
+    }
+  ]
+}

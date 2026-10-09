@@ -1,0 +1,16 @@
+{
+  "canary": "3467cab3-127b-59a7-a139-95d45b88ee4f",
+  "decisive_clusters": [
+    "7f5929e6359baf2ebb0f8d2ada8fa7f612787f0b"
+  ],
+  "fields": {
+    "cut_mmbtu": {
+      "type": "int",
+      "value": 4856
+    },
+    "siq_purchase_mmbtu": {
+      "type": "int",
+      "value": 120144
+    }
+  }
+}

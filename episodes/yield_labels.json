@@ -1,0 +1,188 @@
+{
+  "rubric": "Accept only if the thread settles a concrete typed fact a deterministic grader can check exactly (date/time, volume, price, deal terms, or a dated yes/no), that fact is superseded at least once so the first mention is wrong at some cut point, the settled value is written in the emails themselves, and a careful reader would reach a single answer at a well-chosen cut time.",
+  "labels": [
+    {
+      "candidate_index": 0,
+      "user": "hyatt-k",
+      "subject": "gas indices",
+      "kind": "deal",
+      "accept": false,
+      "reason": "These are automated IntercontinentalExchange gas index bulletins plus one forward, so the prices are daily index quotes, not a negotiated value that gets settled or replaced.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 10,
+      "user": "dasovich-j",
+      "subject": "ca issues",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "Daily press-clipping digests about the California energy crisis, with no meeting or deal being settled.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 42,
+      "user": "dasovich-j",
+      "subject": "meeting re: california",
+      "kind": "meeting",
+      "accept": true,
+      "reason": "The meeting was first proposed as a Wednesday Sept 13 breakfast (then 'start at seven a.m.'), and Lysa Akin then finalizes it as Tuesday Sept 12, 2000, 5:00-6:30pm in the Consulate Room at the Ritz Carlton, which Dasovich's later reply confirms by referring to the 12th.",
+      "strict_accept": true
+    },
+    {
+      "candidate_index": 43,
+      "user": "dasovich-j",
+      "subject": "study?",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "The finance study session stays at 10 AM Sunday at Dasovich's office, with only an end time of noon added, and the later '10-2' reply refers to something unclear, so no fact is cleanly replaced.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 44,
+      "user": "farmer-d",
+      "subject": "midtex meeting feb 1, 2000",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "The 8:30 meeting goes ahead without Farmer and no replacement time is ever set; he only offers time windows and then rules out 2-3pm.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 49,
+      "user": "mims-thurston-p",
+      "subject": "slow day",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "Personal chatter between friends, and the only scheduled item (a 4:00 pm Saturday shower) is stated once and never changes.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 59,
+      "user": "hyvl-d",
+      "subject": "enfolio master firm purchase/sale agreement",
+      "kind": "deal",
+      "accept": true,
+      "reason": "In the contract negotiation with the City of Palo Alto, the penalty in sections 3.2 and 3.4 is cut from $0.15 to $0.015 on Apr 6, 2001, after other written term changes (the 4.2(v)/(vi) period agreed at 20 Gas Days and the Jan 1, 2001 date replaced with a blank).",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 64,
+      "user": "ward-k",
+      "subject": "enfolio master firm purchase/sale agreement",
+      "kind": "deal",
+      "accept": true,
+      "reason": "This is the same Palo Alto Enfolio negotiation seen from Kim Ward's mailbox, where the penalty in sections 3.2 and 3.4 is cut from $0.15 to $0.015 on Apr 6, 2001, after earlier written term changes.",
+      "strict_accept": false,
+      "duplicate_of": 59
+    },
+    {
+      "candidate_index": 65,
+      "user": "williams-w3",
+      "subject": "a3a1 ad hoc review team",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "Members poll candidate dates (June 18-27) for a Portland meeting but no date is ever confirmed, and the due-date revision points to an earlier email that is not in the thread.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 75,
+      "user": "taylor-m",
+      "subject": "rescheduled isda energy and developing products committee meeting on october 23",
+      "kind": "meeting",
+      "accept": true,
+      "reason": "The ISDA committee meeting moves from Oct 23, 2001 to Friday Nov 2, 2001, 11:00 a.m.-12:30 p.m. EST (10:00-11:30 Central), and Goldman confirms Nov 2 in room 5G Houston on Oct 22.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 83,
+      "user": "hodge-j",
+      "subject": "please respond to cancel deal id 124851808",
+      "kind": "deal",
+      "accept": false,
+      "reason": "ICE asks to cancel deal 124851808 and Enron confirms, but the deal terms never change, so the first mention already gives the outcome.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 84,
+      "user": "kean-s",
+      "subject": "dereg articles",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "Press clippings followed by a 'yes' and a 'looks good' on a draft attachment that is not visible, so nothing typed is settled.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 88,
+      "user": "martin-t",
+      "subject": "esop rollover into savings plan",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "The dispute is over which share price ($4.01, $4.71 or $5.01) applies, but Hewitt's explanation is cut off and the make-whole answer is promised for later, so the outcome is never stated.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 89,
+      "user": "reitmeyer-j",
+      "subject": "quick note",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "Personal family email where the times are just arrival times, not a meeting being scheduled.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 91,
+      "user": "taylor-m",
+      "subject": "keswick",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "Personal planning for a graduation weekend with a loose itinerary, and small changes like the tea or manicure timing are never pinned down.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 100,
+      "user": "horton-s",
+      "subject": "ets staff meeting schedule changes for the remainder of may",
+      "kind": "meeting",
+      "accept": true,
+      "reason": "The regular Monday May 21 9:15AM ETS staff meeting is cancelled and replaced by Tuesday May 29, 2001, 9:30-11:00AM in 49C2, so the first time mentioned is wrong and the new one is stated plainly.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 102,
+      "user": "jones-t",
+      "subject": "tanker freight approvals",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "An EOL product approval workflow with GTC edits, where the 6-11AM and 10 a.m. times are standing instructions and deadlines and no typed value is replaced.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 112,
+      "user": "beck-s",
+      "subject": "invitation list for operations business controller offsite",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "The offsite dates (Oct 22-24) never change, and the attendee list stays open and inconsistent (Kenny Nicoll reappears after Brent picks only Cindy Horn), so there is no single checkable answer.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 116,
+      "user": "dasovich-j",
+      "subject": "re-schedule notice - western government affairs meeting",
+      "kind": "meeting",
+      "accept": false,
+      "reason": "The meeting is rescheduled to Sept 12 in Portland, 10AM-5PM, but the original date is never given in the thread, so the first mention is already the right answer.",
+      "strict_accept": false
+    },
+    {
+      "candidate_index": 131,
+      "user": "farmer-d",
+      "subject": "meter 9682",
+      "kind": "deal",
+      "accept": false,
+      "reason": "The nomination was 200/day and Farmer says to increase it, but the new nomination volume is never written down.",
+      "strict_accept": false
+    }
+  ],
+  "strict_rubric": "Strict variant: also require that the old value was stated as current in an earlier, separate email (a change spread across messages, not old and new values in the same email).",
+  "labelled_by": "An independent Claude subagent given only the 20 thread dumps and the rubric; not the episode author."
+}

@@ -1,0 +1,20 @@
+{
+  "canary": "d170b983-4297-5278-bffb-5165fd9db2b5",
+  "decisive_clusters": [
+    "1343f5eaa161b47328cbd4b9d3a0991524b333a6",
+    "6dbc36f1010ccc241b8bd74214d4632ca573d585",
+    "74e3e7baca9516ac21edc7c290a5ee4ea3f874e9",
+    "93b84ab81cb4a279c3814fd92591ba05cdc11f87",
+    "dd3b37b94750045b059edec1ae901876550b240c"
+  ],
+  "fields": {
+    "meeting_date": {
+      "type": "date",
+      "value": "2001-06-08"
+    },
+    "start_time": {
+      "type": "time",
+      "value": "15:00"
+    }
+  }
+}

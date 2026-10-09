@@ -1,0 +1,65 @@
+{
+  "id": "gas-cut-revision",
+  "kind": "deal",
+  "user": "williams-j",
+  "title": "How much gas was cut?",
+  "person": "Jason Williams (Enron gas trading)",
+  "question": "Peoples Gas had supply cut on its ANR contract 104684 for gas day May 30, 2001, and reduced its SIQ purchase for that day. According to this mailbox at the moment above, how many MMBtu were cut for that gas day, and what is Peoples' SIQ purchase for May 30 after the reduction?",
+  "window_days": 90,
+  "fields": {
+    "cut_mmbtu": {"type": "int", "doc": "volume cut for gas day May 30, 2001, in MMBtu, as an integer without commas.", "example": 0},
+    "siq_purchase_mmbtu": {"type": "int", "doc": "Peoples' SIQ purchase for gas day May 30, 2001 after the reduction, in MMBtu, as an integer without commas.", "example": 0}
+  },
+  "thread_paths": [
+    "williams-j/inbox/156.",
+    "williams-j/inbox/159.",
+    "williams-j/inbox/160.",
+    "williams-j/inbox/173.",
+    "williams-j/inbox/186."
+  ],
+  "timeline": [
+    {"utc": "2001-05-31 15:44", "from": "Jer (Peoples Gas)", "path": "inbox/156.", "quote": "Peoples ANR contract 104684 was cut by 6,599 MMBtu throughout the May 30th gas day.", "state": "SET: cut 6,599; SIQ 125,000 -> 118,401"},
+    {"utc": "2001-05-31 19:28", "from": "Cora Pendergrass (Enron)", "path": "inbox/159.", "quote": "Total Cut\t\t(4,856)", "state": "Enron's Northern Border numbers by contract (R0255F 1,131 + T1061F 3,725); asks what ANR says"},
+    {"utc": "2001-05-31 19:50", "from": "Jer (Peoples Gas)", "path": "inbox/160.", "quote": "Therefore, 125,000 of SIQ becomes 120,144 for May 30th.", "state": "REVISED: cut 4,856; SIQ 120,144 (ANR revised its allocation)"},
+    {"utc": "2001-06-04 18:50", "from": "Jer (Peoples Gas)", "path": "inbox/173.", "quote": "The SIQ amount goes from 125,000 to 124,705.", "state": "distractor: a different gas day (June 3), cut 295"},
+    {"utc": "2001-06-06 16:17", "from": "Jer (Peoples Gas)", "path": "inbox/186.", "quote": "The amount goes from 45,000 SIQ to 44,577 SIQ.", "state": "distractor: a different gas day (June 5), cut 423"}
+  ],
+  "alternatives_rejected": [
+    "6,599 / 118,401 after the revision: superseded by Jer's 19:50 email (ANR revised its morning allocation).",
+    "35,144 or 33,401: these are delivered amounts, not the cut or the SIQ purchase.",
+    "1,131 or 3,725: per-contract pieces of the Northern Border cut, not the total.",
+    "295 / 124,705 and 423 / 44,577: cuts for June 3 and June 5, not May 30."
+  ],
+  "cuts": [
+    {
+      "slug": "gas-cut-revision-early",
+      "t_utc": "2001-05-31T17:30:00+00:00",
+      "difficulty": "easy",
+      "expected": {"cut_mmbtu": 6599, "siq_purchase_mmbtu": 118401},
+      "superseded": {"cut_mmbtu": 4856, "siq_purchase_mmbtu": 120144},
+      "decisive_paths": ["williams-j/inbox/156."],
+      "evidence_quote": "cut by 6,599 MMBtu",
+      "post_t_values": ["4,856", "120,144", "35,144"],
+      "metadata": {
+        "difficulty_explanation": "Control task. The snapshot is about 500 emails from 90 days of a gas trader's mailbox, and at this moment exactly one email describes the May 30 cut on contract 104684. The agent still has to find it among routine nominations and report both numbers as integers with a valid citation.",
+        "solution_explanation": "Search the mailbox for contract 104684, read the supplier's email of 31 May: the contract was cut by 6,599 MMBtu and Peoples reduced its SIQ purchase from 125,000 to 118,401. solve.sh checks that email is in the mailbox and writes those numbers citing it.",
+        "verification_explanation": "A separate container with no network reads /app/answer.json and checks both integers exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the email that states the numbers or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
+      }
+    },
+    {
+      "slug": "gas-cut-revision-late",
+      "t_utc": "2001-06-07T17:00:00+00:00",
+      "difficulty": "hard",
+      "expected": {"cut_mmbtu": 4856, "siq_purchase_mmbtu": 120144},
+      "superseded": {"cut_mmbtu": 6599, "siq_purchase_mmbtu": 118401},
+      "decisive_paths": ["williams-j/inbox/160."],
+      "evidence_quote": "becomes 120,144 for May 30th",
+      "post_t_values": [],
+      "metadata": {
+        "difficulty_explanation": "The first report (6,599 cut, SIQ 118,401) was revised the same afternoon after the pipeline changed its allocation (4,856 cut, SIQ 120,144). Around it sit look-alike numbers: Enron's own per-contract cuts that add up to 4,856, delivered amounts of 33,401 and 35,144, and later emails in the same style for June 3 and June 5 with their own cuts and SIQ figures. Taking the first, the latest or the most frequent number in the thread gives a wrong answer.",
+        "solution_explanation": "Collect every email about gas day May 30 on contract 104684, order them by Date header, and take the last statement before the cut: the supplier's 19:50 UTC revision 'The May 30th cut ... is now 4,856 MMBtu' and 'Therefore, 125,000 of SIQ becomes 120,144 for May 30th.' Ignore the June 3 and June 5 emails, which are other gas days. solve.sh checks that email is in the mailbox and writes 4,856 and 120,144 citing it.",
+        "verification_explanation": "A separate container with no network reads /app/answer.json and checks both integers exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the revision email or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
+      }
+    }
+  ]
+}

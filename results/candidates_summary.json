@@ -1,0 +1,14 @@
+{
+  "by_kind": {
+    "deal": 51,
+    "meeting": 85
+  },
+  "candidates": 136,
+  "mailboxes_with_candidates": 64,
+  "rules": {
+    "max_span_days": 45,
+    "min_senders": 2,
+    "min_unique_messages": 3
+  },
+  "threads_considered": 176459
+}

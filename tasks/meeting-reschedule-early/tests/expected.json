@@ -1,0 +1,17 @@
+{
+  "canary": "4ca2c27a-36ca-5ee9-8031-1314b018fdde",
+  "decisive_clusters": [
+    "01db7ed6c5238ab5a1bfe9ebf59527dde1af4025",
+    "0b98f15a2e3074afc8120c532e0412fd7e7c3997"
+  ],
+  "fields": {
+    "meeting_date": {
+      "type": "date",
+      "value": "2001-06-07"
+    },
+    "start_time": {
+      "type": "time",
+      "value": "15:30"
+    }
+  }
+}

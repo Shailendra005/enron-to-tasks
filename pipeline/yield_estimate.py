@@ -33,7 +33,9 @@ def estimate():
     labels = json.loads(LABELS.read_text())["labels"]
     n = len(labels)
     k = sum(1 for x in labels if x["accept"])
+    k_strict = sum(1 for x in labels if x.get("strict_accept"))
     lo, hi = wilson(k, n)
+    slo, shi = wilson(k_strict, n)
     summary = json.loads((RESULTS / "candidates_summary.json").read_text())
     tokens = json.loads((RESULTS / "tokens.json").read_text())
     new_tokens = tokens["levels"]["4_new_text"]["o200k_base"]
@@ -49,6 +51,9 @@ def estimate():
         "estimated_verifiable_episodes_total": [round(cands * lo), round(cands * k / n), round(cands * hi)],
         "estimated_per_mailbox_mean": [round(cands * lo / users, 1), round(cands * k / n / users, 1), round(cands * hi / users, 1)],
         "estimated_per_million_new_text_tokens": [round(cands * lo * per_m, 2), round(cands * k / n * per_m, 2), round(cands * hi * per_m, 2)],
+        "strict_accepted": k_strict,
+        "strict_acceptance_rate_95ci_wilson": [round(slo, 3), round(shi, 3)],
+        "strict_estimated_verifiable_episodes_total": [round(cands * slo), round(cands * k_strict / n), round(cands * shi)],
         "note": "Episodes are thread-level task seeds (one thread can yield more than one cut). Estimates are [low, point, high] from the 95% Wilson interval of a hand-labelled random sample; the miner's recall (good threads it misses) is not measured.",
     }
     write_json(RESULTS / "yield.json", report)

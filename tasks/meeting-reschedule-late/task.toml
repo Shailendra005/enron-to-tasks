@@ -1,0 +1,32 @@
+name = "meeting-reschedule-late"
+artifacts = ["/app/answer.json"]
+
+[metadata]
+author_name = "Shailendrasinh Zala"
+category = "Enterprise data"
+subcategory = "Email archive reasoning"
+tags = ["email-archive", "time-split", "superseded-information", "meeting"]
+difficulty = "medium"
+difficulty_explanation = "The meeting is booked for Thursday at 3:30, then a participant in Portland has a conflict and it moves to Friday at 3 pm Houston time. The final confirmation arrives under a shortened subject line, so it is easy to miss by searching for the original subject, and the last note to the participant gives only the Portland time (1 pm), which is wrong if copied as the answer."
+solution_explanation = "Follow both subject lines of the thread in date order: Christian's conflict, the Friday proposal, his 'Good.', and the assistant's confirmation 'it's on Mark's calendar (3:00 pm - Friday, June 8)'. The answer is Friday 8 June 2001 at 15:00 Houston time. solve.sh checks the confirmation email is in the mailbox and writes that answer citing it."
+verification_explanation = "A separate container with no network reads /app/answer.json and checks the date and start time exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one from the emails that set the Friday time or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
+
+[verifier]
+timeout_sec = 300
+environment_mode = "separate"
+
+[verifier.environment]
+allow_internet = false
+build_timeout_sec = 600
+cpus = 1
+memory_mb = 2048
+
+[agent]
+timeout_sec = 1800
+
+[environment]
+allow_internet = true
+build_timeout_sec = 900
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240

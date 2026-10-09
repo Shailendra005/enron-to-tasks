@@ -81,7 +81,8 @@ def check_cut(ep, cut, user_rows):
         bodies[p] = p.read_text(encoding="latin-1")
     result["L1_files_after_t_or_undated"] = late
 
-    snap_clusters = {r["cluster"] for r in user_rows if r["path"].split("/", 1)[1] in {str(p.relative_to(task / "environment" / "mailbox")) for p in files}}
+    rels = {str(p.relative_to(task / "environment" / "mailbox")) for p in files}
+    snap_clusters = {r["cluster"] for r in user_rows if r["path"].split("/", 1)[1] in rels}
     straddle = sorted({r["cluster"] for r in user_rows if r["cluster"] in snap_clusters and r["date_utc"] and datetime.fromisoformat(r["date_utc"]) > t})
     result["L2_clusters_straddling_t"] = straddle
 

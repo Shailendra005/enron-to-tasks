@@ -1,0 +1,36 @@
+{
+  "acceptance_rate": 0.25,
+  "acceptance_rate_95ci_wilson": [
+    0.112,
+    0.469
+  ],
+  "accepted": 5,
+  "candidates_total": 136,
+  "estimated_per_mailbox_mean": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "estimated_per_million_new_text_tokens": [
+    0.24,
+    0.53,
+    0.98
+  ],
+  "estimated_verifiable_episodes_total": [
+    15,
+    34,
+    64
+  ],
+  "note": "Episodes are thread-level task seeds (one thread can yield more than one cut). Estimates are [low, point, high] from the 95% Wilson interval of a hand-labelled random sample; the miner's recall (good threads it misses) is not measured.",
+  "sample_size": 20,
+  "strict_acceptance_rate_95ci_wilson": [
+    0.009,
+    0.236
+  ],
+  "strict_accepted": 1,
+  "strict_estimated_verifiable_episodes_total": [
+    1,
+    7,
+    32
+  ]
+}
