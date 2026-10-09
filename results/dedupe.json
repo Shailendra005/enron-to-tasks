@@ -1,0 +1,10 @@
+{
+  "clusters_found_in_more_than_one_mailbox": 15962,
+  "content_clusters": 253821,
+  "content_clusters_ignoring_date": 246629,
+  "cross_mailbox_copies": 35189,
+  "distinct_message_ids": 517401,
+  "files": 517401,
+  "unique_share_of_files": 0.4906,
+  "within_mailbox_copies": 228391
+}

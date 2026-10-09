@@ -1,0 +1,902 @@
+{
+  "allen-p": {
+    "files": 3034,
+    "new_text_tokens_o200k": 262263,
+    "raw_body_tokens_o200k": 928522,
+    "unique_messages": 1397
+  },
+  "arnold-j": {
+    "files": 4898,
+    "new_text_tokens_o200k": 819470,
+    "raw_body_tokens_o200k": 2108511,
+    "unique_messages": 2643
+  },
+  "arora-h": {
+    "files": 654,
+    "new_text_tokens_o200k": 287397,
+    "raw_body_tokens_o200k": 423098,
+    "unique_messages": 492
+  },
+  "badeer-r": {
+    "files": 877,
+    "new_text_tokens_o200k": 70816,
+    "raw_body_tokens_o200k": 362163,
+    "unique_messages": 324
+  },
+  "bailey-s": {
+    "files": 478,
+    "new_text_tokens_o200k": 54678,
+    "raw_body_tokens_o200k": 134346,
+    "unique_messages": 461
+  },
+  "bass-e": {
+    "files": 7823,
+    "new_text_tokens_o200k": 1656788,
+    "raw_body_tokens_o200k": 4394415,
+    "unique_messages": 3083
+  },
+  "baughman-d": {
+    "files": 2760,
+    "new_text_tokens_o200k": 772557,
+    "raw_body_tokens_o200k": 1556702,
+    "unique_messages": 1805
+  },
+  "beck-s": {
+    "files": 11830,
+    "new_text_tokens_o200k": 836055,
+    "raw_body_tokens_o200k": 4417473,
+    "unique_messages": 4926
+  },
+  "benson-r": {
+    "files": 767,
+    "new_text_tokens_o200k": 164486,
+    "raw_body_tokens_o200k": 335687,
+    "unique_messages": 600
+  },
+  "blair-l": {
+    "files": 3415,
+    "new_text_tokens_o200k": 453702,
+    "raw_body_tokens_o200k": 1056216,
+    "unique_messages": 3233
+  },
+  "brawner-s": {
+    "files": 1026,
+    "new_text_tokens_o200k": 104743,
+    "raw_body_tokens_o200k": 390811,
+    "unique_messages": 591
+  },
+  "buy-r": {
+    "files": 2429,
+    "new_text_tokens_o200k": 327316,
+    "raw_body_tokens_o200k": 705887,
+    "unique_messages": 1906
+  },
+  "campbell-l": {
+    "files": 6490,
+    "new_text_tokens_o200k": 911461,
+    "raw_body_tokens_o200k": 2726718,
+    "unique_messages": 3165
+  },
+  "carson-m": {
+    "files": 1400,
+    "new_text_tokens_o200k": 305663,
+    "raw_body_tokens_o200k": 491663,
+    "unique_messages": 884
+  },
+  "cash-m": {
+    "files": 2969,
+    "new_text_tokens_o200k": 430266,
+    "raw_body_tokens_o200k": 1666425,
+    "unique_messages": 2273
+  },
+  "causholli-m": {
+    "files": 943,
+    "new_text_tokens_o200k": 300660,
+    "raw_body_tokens_o200k": 410608,
+    "unique_messages": 935
+  },
+  "corman-s": {
+    "files": 2025,
+    "new_text_tokens_o200k": 769248,
+    "raw_body_tokens_o200k": 1073721,
+    "unique_messages": 1981
+  },
+  "crandell-s": {
+    "files": 519,
+    "new_text_tokens_o200k": 271351,
+    "raw_body_tokens_o200k": 376295,
+    "unique_messages": 519
+  },
+  "cuilla-m": {
+    "files": 1029,
+    "new_text_tokens_o200k": 893959,
+    "raw_body_tokens_o200k": 1062231,
+    "unique_messages": 745
+  },
+  "dasovich-j": {
+    "files": 28234,
+    "new_text_tokens_o200k": 9443150,
+    "raw_body_tokens_o200k": 26514932,
+    "unique_messages": 15878
+  },
+  "davis-d": {
+    "files": 2249,
+    "new_text_tokens_o200k": 164686,
+    "raw_body_tokens_o200k": 789966,
+    "unique_messages": 1126
+  },
+  "dean-c": {
+    "files": 2429,
+    "new_text_tokens_o200k": 734664,
+    "raw_body_tokens_o200k": 1984416,
+    "unique_messages": 1771
+  },
+  "delainey-d": {
+    "files": 3566,
+    "new_text_tokens_o200k": 75696,
+    "raw_body_tokens_o200k": 1415387,
+    "unique_messages": 1001
+  },
+  "derrick-j": {
+    "files": 1766,
+    "new_text_tokens_o200k": 196674,
+    "raw_body_tokens_o200k": 811083,
+    "unique_messages": 1431
+  },
+  "dickson-s": {
+    "files": 395,
+    "new_text_tokens_o200k": 7173,
+    "raw_body_tokens_o200k": 64622,
+    "unique_messages": 199
+  },
+  "donoho-l": {
+    "files": 1045,
+    "new_text_tokens_o200k": 200710,
+    "raw_body_tokens_o200k": 337276,
+    "unique_messages": 1045
+  },
+  "donohoe-t": {
+    "files": 1015,
+    "new_text_tokens_o200k": 257837,
+    "raw_body_tokens_o200k": 525804,
+    "unique_messages": 687
+  },
+  "dorland-c": {
+    "files": 2127,
+    "new_text_tokens_o200k": 1367653,
+    "raw_body_tokens_o200k": 1743830,
+    "unique_messages": 1307
+  },
+  "ermis-f": {
+    "files": 1230,
+    "new_text_tokens_o200k": 619768,
+    "raw_body_tokens_o200k": 1027690,
+    "unique_messages": 713
+  },
+  "farmer-d": {
+    "files": 13032,
+    "new_text_tokens_o200k": 600567,
+    "raw_body_tokens_o200k": 3600186,
+    "unique_messages": 5234
+  },
+  "fischer-m": {
+    "files": 1498,
+    "new_text_tokens_o200k": 78904,
+    "raw_body_tokens_o200k": 455530,
+    "unique_messages": 711
+  },
+  "forney-j": {
+    "files": 729,
+    "new_text_tokens_o200k": 687078,
+    "raw_body_tokens_o200k": 819963,
+    "unique_messages": 729
+  },
+  "fossum-d": {
+    "files": 4796,
+    "new_text_tokens_o200k": 241019,
+    "raw_body_tokens_o200k": 2336802,
+    "unique_messages": 1551
+  },
+  "gang-l": {
+    "files": 590,
+    "new_text_tokens_o200k": 103749,
+    "raw_body_tokens_o200k": 186514,
+    "unique_messages": 590
+  },
+  "gay-r": {
+    "files": 1415,
+    "new_text_tokens_o200k": 63268,
+    "raw_body_tokens_o200k": 498871,
+    "unique_messages": 564
+  },
+  "geaccone-t": {
+    "files": 1592,
+    "new_text_tokens_o200k": 192041,
+    "raw_body_tokens_o200k": 572696,
+    "unique_messages": 1576
+  },
+  "germany-c": {
+    "files": 12436,
+    "new_text_tokens_o200k": 693260,
+    "raw_body_tokens_o200k": 3808292,
+    "unique_messages": 5723
+  },
+  "gilbertsmith-d": {
+    "files": 578,
+    "new_text_tokens_o200k": 108163,
+    "raw_body_tokens_o200k": 179137,
+    "unique_messages": 578
+  },
+  "giron-d": {
+    "files": 4220,
+    "new_text_tokens_o200k": 261934,
+    "raw_body_tokens_o200k": 1771878,
+    "unique_messages": 1929
+  },
+  "griffith-j": {
+    "files": 2973,
+    "new_text_tokens_o200k": 270706,
+    "raw_body_tokens_o200k": 874271,
+    "unique_messages": 1718
+  },
+  "grigsby-m": {
+    "files": 2237,
+    "new_text_tokens_o200k": 962485,
+    "raw_body_tokens_o200k": 1451021,
+    "unique_messages": 1166
+  },
+  "guzman-m": {
+    "files": 6054,
+    "new_text_tokens_o200k": 1314531,
+    "raw_body_tokens_o200k": 4408067,
+    "unique_messages": 2073
+  },
+  "haedicke-m": {
+    "files": 5246,
+    "new_text_tokens_o200k": 1545847,
+    "raw_body_tokens_o200k": 3816051,
+    "unique_messages": 3192
+  },
+  "hain-m": {
+    "files": 3820,
+    "new_text_tokens_o200k": 694678,
+    "raw_body_tokens_o200k": 3548687,
+    "unique_messages": 1353
+  },
+  "harris-s": {
+    "files": 548,
+    "new_text_tokens_o200k": 112480,
+    "raw_body_tokens_o200k": 182477,
+    "unique_messages": 548
+  },
+  "hayslett-r": {
+    "files": 2554,
+    "new_text_tokens_o200k": 166887,
+    "raw_body_tokens_o200k": 717473,
+    "unique_messages": 1770
+  },
+  "heard-m": {
+    "files": 1623,
+    "new_text_tokens_o200k": 152434,
+    "raw_body_tokens_o200k": 584201,
+    "unique_messages": 1613
+  },
+  "hendrickson-s": {
+    "files": 719,
+    "new_text_tokens_o200k": 246923,
+    "raw_body_tokens_o200k": 369591,
+    "unique_messages": 526
+  },
+  "hernandez-j": {
+    "files": 3265,
+    "new_text_tokens_o200k": 292494,
+    "raw_body_tokens_o200k": 2282606,
+    "unique_messages": 1327
+  },
+  "hodge-j": {
+    "files": 1661,
+    "new_text_tokens_o200k": 313640,
+    "raw_body_tokens_o200k": 637869,
+    "unique_messages": 1439
+  },
+  "holst-k": {
+    "files": 463,
+    "new_text_tokens_o200k": 389605,
+    "raw_body_tokens_o200k": 454705,
+    "unique_messages": 439
+  },
+  "horton-s": {
+    "files": 2470,
+    "new_text_tokens_o200k": 200123,
+    "raw_body_tokens_o200k": 746663,
+    "unique_messages": 1329
+  },
+  "hyatt-k": {
+    "files": 1794,
+    "new_text_tokens_o200k": 1162416,
+    "raw_body_tokens_o200k": 1488486,
+    "unique_messages": 1772
+  },
+  "hyvl-d": {
+    "files": 3210,
+    "new_text_tokens_o200k": 155692,
+    "raw_body_tokens_o200k": 1094563,
+    "unique_messages": 1632
+  },
+  "jones-t": {
+    "files": 19950,
+    "new_text_tokens_o200k": 1197228,
+    "raw_body_tokens_o200k": 6748445,
+    "unique_messages": 10663
+  },
+  "kaminski-v": {
+    "files": 28465,
+    "new_text_tokens_o200k": 2109281,
+    "raw_body_tokens_o200k": 12352733,
+    "unique_messages": 11527
+  },
+  "kean-s": {
+    "files": 25351,
+    "new_text_tokens_o200k": 2624160,
+    "raw_body_tokens_o200k": 19531347,
+    "unique_messages": 6210
+  },
+  "keavey-p": {
+    "files": 2177,
+    "new_text_tokens_o200k": 732847,
+    "raw_body_tokens_o200k": 1457999,
+    "unique_messages": 1287
+  },
+  "keiser-k": {
+    "files": 1113,
+    "new_text_tokens_o200k": 126941,
+    "raw_body_tokens_o200k": 368088,
+    "unique_messages": 1112
+  },
+  "king-j": {
+    "files": 462,
+    "new_text_tokens_o200k": 173792,
+    "raw_body_tokens_o200k": 253452,
+    "unique_messages": 421
+  },
+  "kitchen-l": {
+    "files": 5546,
+    "new_text_tokens_o200k": 1954858,
+    "raw_body_tokens_o200k": 3507671,
+    "unique_messages": 5251
+  },
+  "kuykendall-t": {
+    "files": 1120,
+    "new_text_tokens_o200k": 387701,
+    "raw_body_tokens_o200k": 681015,
+    "unique_messages": 577
+  },
+  "lavorato-j": {
+    "files": 4685,
+    "new_text_tokens_o200k": 383152,
+    "raw_body_tokens_o200k": 1035101,
+    "unique_messages": 2933
+  },
+  "lay-k": {
+    "files": 5937,
+    "new_text_tokens_o200k": 787977,
+    "raw_body_tokens_o200k": 2447689,
+    "unique_messages": 3651
+  },
+  "lenhart-m": {
+    "files": 5920,
+    "new_text_tokens_o200k": 388019,
+    "raw_body_tokens_o200k": 1848075,
+    "unique_messages": 3350
+  },
+  "lewis-a": {
+    "files": 2191,
+    "new_text_tokens_o200k": 1999117,
+    "raw_body_tokens_o200k": 2577826,
+    "unique_messages": 1784
+  },
+  "linder-e": {
+    "files": 2805,
+    "new_text_tokens_o200k": 357678,
+    "raw_body_tokens_o200k": 1128981,
+    "unique_messages": 944
+  },
+  "lokay-m": {
+    "files": 5568,
+    "new_text_tokens_o200k": 675680,
+    "raw_body_tokens_o200k": 2095955,
+    "unique_messages": 3167
+  },
+  "lokey-t": {
+    "files": 1156,
+    "new_text_tokens_o200k": 248528,
+    "raw_body_tokens_o200k": 486808,
+    "unique_messages": 1156
+  },
+  "love-p": {
+    "files": 5002,
+    "new_text_tokens_o200k": 253130,
+    "raw_body_tokens_o200k": 1433300,
+    "unique_messages": 2495
+  },
+  "lucci-p": {
+    "files": 997,
+    "new_text_tokens_o200k": 752422,
+    "raw_body_tokens_o200k": 940573,
+    "unique_messages": 988
+  },
+  "maggi-m": {
+    "files": 1991,
+    "new_text_tokens_o200k": 106840,
+    "raw_body_tokens_o200k": 627222,
+    "unique_messages": 1894
+  },
+  "mann-k": {
+    "files": 23381,
+    "new_text_tokens_o200k": 643173,
+    "raw_body_tokens_o200k": 8164182,
+    "unique_messages": 7609
+  },
+  "martin-t": {
+    "files": 1112,
+    "new_text_tokens_o200k": 1929237,
+    "raw_body_tokens_o200k": 2115934,
+    "unique_messages": 1001
+  },
+  "may-l": {
+    "files": 1600,
+    "new_text_tokens_o200k": 366582,
+    "raw_body_tokens_o200k": 587616,
+    "unique_messages": 1304
+  },
+  "mccarty-d": {
+    "files": 691,
+    "new_text_tokens_o200k": 87025,
+    "raw_body_tokens_o200k": 453938,
+    "unique_messages": 690
+  },
+  "mcconnell-m": {
+    "files": 4542,
+    "new_text_tokens_o200k": 292581,
+    "raw_body_tokens_o200k": 1702017,
+    "unique_messages": 1842
+  },
+  "mckay-b": {
+    "files": 681,
+    "new_text_tokens_o200k": 495992,
+    "raw_body_tokens_o200k": 609300,
+    "unique_messages": 512
+  },
+  "mckay-j": {
+    "files": 998,
+    "new_text_tokens_o200k": 110877,
+    "raw_body_tokens_o200k": 272415,
+    "unique_messages": 989
+  },
+  "mclaughlin-e": {
+    "files": 3353,
+    "new_text_tokens_o200k": 271118,
+    "raw_body_tokens_o200k": 1022857,
+    "unique_messages": 1606
+  },
+  "merriss-s": {
+    "files": 1627,
+    "new_text_tokens_o200k": 127452,
+    "raw_body_tokens_o200k": 424775,
+    "unique_messages": 551
+  },
+  "meyers-a": {
+    "files": 1099,
+    "new_text_tokens_o200k": 134608,
+    "raw_body_tokens_o200k": 158722,
+    "unique_messages": 1099
+  },
+  "mims-thurston-p": {
+    "files": 2038,
+    "new_text_tokens_o200k": 532708,
+    "raw_body_tokens_o200k": 788801,
+    "unique_messages": 1480
+  },
+  "motley-m": {
+    "files": 378,
+    "new_text_tokens_o200k": 371546,
+    "raw_body_tokens_o200k": 404823,
+    "unique_messages": 378
+  },
+  "neal-s": {
+    "files": 3268,
+    "new_text_tokens_o200k": 320175,
+    "raw_body_tokens_o200k": 1216477,
+    "unique_messages": 1776
+  },
+  "nemec-g": {
+    "files": 10655,
+    "new_text_tokens_o200k": 828470,
+    "raw_body_tokens_o200k": 3021136,
+    "unique_messages": 6434
+  },
+  "panus-s": {
+    "files": 437,
+    "new_text_tokens_o200k": 69611,
+    "raw_body_tokens_o200k": 167801,
+    "unique_messages": 437
+  },
+  "parks-j": {
+    "files": 2284,
+    "new_text_tokens_o200k": 238969,
+    "raw_body_tokens_o200k": 1005111,
+    "unique_messages": 2199
+  },
+  "pereira-s": {
+    "files": 725,
+    "new_text_tokens_o200k": 72932,
+    "raw_body_tokens_o200k": 248500,
+    "unique_messages": 413
+  },
+  "perlingiere-d": {
+    "files": 4778,
+    "new_text_tokens_o200k": 292085,
+    "raw_body_tokens_o200k": 875260,
+    "unique_messages": 2931
+  },
+  "phanis-s": {
+    "files": 35,
+    "new_text_tokens_o200k": 2991,
+    "raw_body_tokens_o200k": 5607,
+    "unique_messages": 35
+  },
+  "pimenov-v": {
+    "files": 642,
+    "new_text_tokens_o200k": 158938,
+    "raw_body_tokens_o200k": 288575,
+    "unique_messages": 638
+  },
+  "platter-p": {
+    "files": 574,
+    "new_text_tokens_o200k": 167309,
+    "raw_body_tokens_o200k": 248360,
+    "unique_messages": 574
+  },
+  "presto-k": {
+    "files": 2204,
+    "new_text_tokens_o200k": 765227,
+    "raw_body_tokens_o200k": 1235839,
+    "unique_messages": 2132
+  },
+  "quenet-j": {
+    "files": 395,
+    "new_text_tokens_o200k": 60141,
+    "raw_body_tokens_o200k": 109643,
+    "unique_messages": 229
+  },
+  "quigley-d": {
+    "files": 1568,
+    "new_text_tokens_o200k": 519232,
+    "raw_body_tokens_o200k": 845834,
+    "unique_messages": 1500
+  },
+  "rapp-b": {
+    "files": 563,
+    "new_text_tokens_o200k": 256916,
+    "raw_body_tokens_o200k": 344379,
+    "unique_messages": 557
+  },
+  "reitmeyer-j": {
+    "files": 498,
+    "new_text_tokens_o200k": 141755,
+    "raw_body_tokens_o200k": 190999,
+    "unique_messages": 497
+  },
+  "richey-c": {
+    "files": 582,
+    "new_text_tokens_o200k": 169165,
+    "raw_body_tokens_o200k": 301028,
+    "unique_messages": 582
+  },
+  "ring-a": {
+    "files": 706,
+    "new_text_tokens_o200k": 59112,
+    "raw_body_tokens_o200k": 256314,
+    "unique_messages": 380
+  },
+  "ring-r": {
+    "files": 994,
+    "new_text_tokens_o200k": 170763,
+    "raw_body_tokens_o200k": 398459,
+    "unique_messages": 983
+  },
+  "rodrique-r": {
+    "files": 2766,
+    "new_text_tokens_o200k": 47701,
+    "raw_body_tokens_o200k": 415871,
+    "unique_messages": 823
+  },
+  "rogers-b": {
+    "files": 8009,
+    "new_text_tokens_o200k": 667069,
+    "raw_body_tokens_o200k": 2223208,
+    "unique_messages": 3055
+  },
+  "ruscitti-k": {
+    "files": 1643,
+    "new_text_tokens_o200k": 303035,
+    "raw_body_tokens_o200k": 638860,
+    "unique_messages": 910
+  },
+  "sager-e": {
+    "files": 5200,
+    "new_text_tokens_o200k": 446276,
+    "raw_body_tokens_o200k": 1868106,
+    "unique_messages": 3255
+  },
+  "saibi-e": {
+    "files": 1116,
+    "new_text_tokens_o200k": 316114,
+    "raw_body_tokens_o200k": 411710,
+    "unique_messages": 1091
+  },
+  "salisbury-h": {
+    "files": 1632,
+    "new_text_tokens_o200k": 371171,
+    "raw_body_tokens_o200k": 687919,
+    "unique_messages": 1632
+  },
+  "sanchez-m": {
+    "files": 256,
+    "new_text_tokens_o200k": 47418,
+    "raw_body_tokens_o200k": 114042,
+    "unique_messages": 248
+  },
+  "sanders-r": {
+    "files": 7329,
+    "new_text_tokens_o200k": 603678,
+    "raw_body_tokens_o200k": 3536427,
+    "unique_messages": 4335
+  },
+  "scholtes-d": {
+    "files": 647,
+    "new_text_tokens_o200k": 82655,
+    "raw_body_tokens_o200k": 237110,
+    "unique_messages": 647
+  },
+  "schoolcraft-d": {
+    "files": 1859,
+    "new_text_tokens_o200k": 249721,
+    "raw_body_tokens_o200k": 575796,
+    "unique_messages": 1778
+  },
+  "schwieger-j": {
+    "files": 738,
+    "new_text_tokens_o200k": 155067,
+    "raw_body_tokens_o200k": 292863,
+    "unique_messages": 573
+  },
+  "scott-s": {
+    "files": 8022,
+    "new_text_tokens_o200k": 1061648,
+    "raw_body_tokens_o200k": 3887502,
+    "unique_messages": 3554
+  },
+  "semperger-c": {
+    "files": 721,
+    "new_text_tokens_o200k": 102443,
+    "raw_body_tokens_o200k": 251931,
+    "unique_messages": 720
+  },
+  "shackleton-s": {
+    "files": 18687,
+    "new_text_tokens_o200k": 1532418,
+    "raw_body_tokens_o200k": 7218730,
+    "unique_messages": 10629
+  },
+  "shankman-j": {
+    "files": 3856,
+    "new_text_tokens_o200k": 441050,
+    "raw_body_tokens_o200k": 1772683,
+    "unique_messages": 2202
+  },
+  "shapiro-r": {
+    "files": 6071,
+    "new_text_tokens_o200k": 1483958,
+    "raw_body_tokens_o200k": 4017711,
+    "unique_messages": 3369
+  },
+  "shively-h": {
+    "files": 1991,
+    "new_text_tokens_o200k": 194246,
+    "raw_body_tokens_o200k": 605474,
+    "unique_messages": 1220
+  },
+  "skilling-j": {
+    "files": 4139,
+    "new_text_tokens_o200k": 877151,
+    "raw_body_tokens_o200k": 1846441,
+    "unique_messages": 2583
+  },
+  "slinger-r": {
+    "files": 132,
+    "new_text_tokens_o200k": 27161,
+    "raw_body_tokens_o200k": 34208,
+    "unique_messages": 132
+  },
+  "smith-m": {
+    "files": 1642,
+    "new_text_tokens_o200k": 284809,
+    "raw_body_tokens_o200k": 522964,
+    "unique_messages": 1084
+  },
+  "solberg-g": {
+    "files": 1081,
+    "new_text_tokens_o200k": 136313,
+    "raw_body_tokens_o200k": 157338,
+    "unique_messages": 1081
+  },
+  "south-s": {
+    "files": 248,
+    "new_text_tokens_o200k": 35915,
+    "raw_body_tokens_o200k": 115299,
+    "unique_messages": 118
+  },
+  "staab-t": {
+    "files": 621,
+    "new_text_tokens_o200k": 522457,
+    "raw_body_tokens_o200k": 624610,
+    "unique_messages": 596
+  },
+  "stclair-c": {
+    "files": 3030,
+    "new_text_tokens_o200k": 117999,
+    "raw_body_tokens_o200k": 950272,
+    "unique_messages": 1523
+  },
+  "steffes-j": {
+    "files": 3331,
+    "new_text_tokens_o200k": 726205,
+    "raw_body_tokens_o200k": 1896855,
+    "unique_messages": 3274
+  },
+  "stepenovitch-j": {
+    "files": 1227,
+    "new_text_tokens_o200k": 313858,
+    "raw_body_tokens_o200k": 523433,
+    "unique_messages": 974
+  },
+  "stokley-c": {
+    "files": 1252,
+    "new_text_tokens_o200k": 139865,
+    "raw_body_tokens_o200k": 454846,
+    "unique_messages": 1252
+  },
+  "storey-g": {
+    "files": 1027,
+    "new_text_tokens_o200k": 336913,
+    "raw_body_tokens_o200k": 498586,
+    "unique_messages": 875
+  },
+  "sturm-f": {
+    "files": 1169,
+    "new_text_tokens_o200k": 94225,
+    "raw_body_tokens_o200k": 271474,
+    "unique_messages": 752
+  },
+  "swerzbin-m": {
+    "files": 355,
+    "new_text_tokens_o200k": 170067,
+    "raw_body_tokens_o200k": 217268,
+    "unique_messages": 355
+  },
+  "symes-k": {
+    "files": 10827,
+    "new_text_tokens_o200k": 707485,
+    "raw_body_tokens_o200k": 3978621,
+    "unique_messages": 3234
+  },
+  "taylor-m": {
+    "files": 13875,
+    "new_text_tokens_o200k": 1297281,
+    "raw_body_tokens_o200k": 6323609,
+    "unique_messages": 7710
+  },
+  "tholt-j": {
+    "files": 1885,
+    "new_text_tokens_o200k": 256142,
+    "raw_body_tokens_o200k": 798950,
+    "unique_messages": 1037
+  },
+  "thomas-p": {
+    "files": 1293,
+    "new_text_tokens_o200k": 761435,
+    "raw_body_tokens_o200k": 955026,
+    "unique_messages": 1288
+  },
+  "townsend-j": {
+    "files": 646,
+    "new_text_tokens_o200k": 232940,
+    "raw_body_tokens_o200k": 386270,
+    "unique_messages": 472
+  },
+  "tycholiz-b": {
+    "files": 1219,
+    "new_text_tokens_o200k": 124517,
+    "raw_body_tokens_o200k": 338638,
+    "unique_messages": 1176
+  },
+  "ward-k": {
+    "files": 2611,
+    "new_text_tokens_o200k": 305572,
+    "raw_body_tokens_o200k": 1053775,
+    "unique_messages": 2044
+  },
+  "watson-k": {
+    "files": 2950,
+    "new_text_tokens_o200k": 715548,
+    "raw_body_tokens_o200k": 1329598,
+    "unique_messages": 2946
+  },
+  "weldon-c": {
+    "files": 1566,
+    "new_text_tokens_o200k": 202852,
+    "raw_body_tokens_o200k": 642660,
+    "unique_messages": 973
+  },
+  "whalley-g": {
+    "files": 1878,
+    "new_text_tokens_o200k": 621905,
+    "raw_body_tokens_o200k": 956187,
+    "unique_messages": 1165
+  },
+  "whalley-l": {
+    "files": 3335,
+    "new_text_tokens_o200k": 337856,
+    "raw_body_tokens_o200k": 1464587,
+    "unique_messages": 1110
+  },
+  "white-s": {
+    "files": 3272,
+    "new_text_tokens_o200k": 289477,
+    "raw_body_tokens_o200k": 785294,
+    "unique_messages": 2916
+  },
+  "whitt-m": {
+    "files": 807,
+    "new_text_tokens_o200k": 175032,
+    "raw_body_tokens_o200k": 378753,
+    "unique_messages": 804
+  },
+  "williams-j": {
+    "files": 1213,
+    "new_text_tokens_o200k": 448822,
+    "raw_body_tokens_o200k": 638760,
+    "unique_messages": 982
+  },
+  "williams-w3": {
+    "files": 3440,
+    "new_text_tokens_o200k": 528483,
+    "raw_body_tokens_o200k": 810327,
+    "unique_messages": 3439
+  },
+  "wolfe-j": {
+    "files": 1587,
+    "new_text_tokens_o200k": 205052,
+    "raw_body_tokens_o200k": 564884,
+    "unique_messages": 1013
+  },
+  "ybarbo-p": {
+    "files": 1291,
+    "new_text_tokens_o200k": 458090,
+    "raw_body_tokens_o200k": 699318,
+    "unique_messages": 1083
+  },
+  "zipper-a": {
+    "files": 1563,
+    "new_text_tokens_o200k": 315233,
+    "raw_body_tokens_o200k": 543600,
+    "unique_messages": 1452
+  },
+  "zufferli-j": {
+    "files": 557,
+    "new_text_tokens_o200k": 84506,
+    "raw_body_tokens_o200k": 194649,
+    "unique_messages": 555
+  }
+}

@@ -76,23 +76,28 @@ def read_message(path):
     with open(path, "rb") as fh:
         raw = fh.read()
     msg = email.message_from_bytes(raw)
+
+    def h(name):
+        value = msg.get(name)
+        return "" if value is None else str(value)
+
     rel = Path(path).relative_to(MAILDIR)
-    date_raw = msg.get("Date", "")
+    date_raw = h("Date")
     dt = parse_date(date_raw)
     return {
         "path": str(rel),
         "user": rel.parts[0],
         "folder": "/".join(rel.parts[1:-1]),
-        "message_id": (msg.get("Message-ID") or "").strip(),
+        "message_id": h("Message-ID").strip(),
         "date_raw": date_raw,
         "date_utc": dt.isoformat() if dt else None,
         "tz": tz_offset(date_raw),
-        "from": msg.get("From", ""),
-        "to": msg.get("To", ""),
-        "cc": msg.get("Cc", ""),
-        "subject": msg.get("Subject", ""),
-        "x_from": msg.get("X-From", ""),
-        "x_to": msg.get("X-To", ""),
+        "from": h("From"),
+        "to": h("To"),
+        "cc": h("Cc"),
+        "subject": h("Subject"),
+        "x_from": h("X-From"),
+        "x_to": h("X-To"),
         "raw_chars": len(raw),
         "body": body_text(msg),
     }

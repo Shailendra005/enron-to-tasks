@@ -1,0 +1,14 @@
+{
+  "boilerplate_min_repeats": 50,
+  "boilerplate_paragraph_patterns": 1009,
+  "boilerplate_paragraphs_removed": 175144,
+  "quote_rule_fired": {
+    "forwarded_by": 30178,
+    "none": 146060,
+    "notes_header": 23539,
+    "original_appointment": 133,
+    "original_message": 53658,
+    "outlook_header": 253
+  },
+  "unique_messages": 253821
+}
