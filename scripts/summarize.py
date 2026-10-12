@@ -53,8 +53,10 @@ def main():
     roots = [Path(p).expanduser() for p in sys.argv[1:]]
     rows = []
     for root in roots:
-        for result in sorted(root.glob("*/*/result.json")):
-            rows.append(trial_row(result.parent))
+        pattern = "*/result.json" if (root / "config.json").exists() else "*/*/result.json"
+        for result in sorted(root.glob(pattern)):
+            if (result.parent / "verifier").exists() or (result.parent / "agent").exists():
+                rows.append(trial_row(result.parent))
     RESULTS.mkdir(exist_ok=True)
     with open(RESULTS / "trials.csv", "w", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=FIELDS)

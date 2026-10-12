@@ -1,0 +1,7 @@
+# Data
+
+- **Source**: the Enron email corpus as distributed by Carnegie Mellon University, `enron_mail_20150507.tar.gz` (https://www.cs.cmu.edu/~enron/). 443,254,787 bytes, SHA-256 `b3da1b3fe0369ec3140bb4fbce94702c33b7da810ec15d718b3fadf5cd748ca7` as downloaded on 2026-10-10. 517,401 messages from 150 mailboxes. The corpus was made public during the federal investigation of Enron and has been widely used in research since.
+- **What this repo publishes**: code, aggregate statistics, the four task definitions, and short quotes from the business emails the tasks are built on. It does **not** publish the mailbox snapshots. Each task ships a `snapshot_manifest.json` (file path and SHA-256 for every email in its snapshot), and `python -m pipeline.build_task --rebuild` recreates the snapshot from your own copy of the corpus and verifies every hash.
+- **Personal content**: the corpus contains personal email. The tasks use business threads only, and no personal email is quoted here. The full snapshots given to the agent are rebuilt locally and never committed.
+- **Attachments**: the CMU release contains no attachments, so nothing here measures attachment content.
+- **Pretraining exposure**: the corpus is widely mirrored and very likely appears in model pretraining data. The agent's web tools are disabled during runs, and the time-split design means a memorised "final" answer is wrong for the early cuts.

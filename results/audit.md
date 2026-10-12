@@ -36,6 +36,7 @@
   - Friday, June 8 :: environment/mailbox/notes_inbox/2048.
   - 3 pm Houston :: environment/mailbox/all_documents/10521.
   - 3 pm Houston :: environment/mailbox/sent/6030.
+  - review: All 8 hits reviewed by hand: NYMEX/COMEX exchange notices dated 31 May and 4 Jun, an internal newsletter event on 8 June, and an April ISDA email ('until about 3 pm Houston'). None concerns this meeting; they act as natural distractors, not leaks.
 - L7_files_containing_answer_value: {'meeting_date': 20, 'start_time': 8}
 
 ## meeting-reschedule-late  (2234 files)  PASS
