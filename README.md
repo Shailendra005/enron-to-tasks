@@ -2,7 +2,7 @@
 
 **From "estimated tokens" to "estimated verifiable tasks": an end-to-end measurement on the public Enron email archive.**
 
-Company email archives are starting to be valued by their token count. AI labs and RL-environment builders, though, pay for something narrower: tasks where an agent's answer can be checked. This repo measures the gap between those two numbers on a real archive of 517,401 emails, then builds four gradable agent tasks out of real threads and audits them for leakage and shortcuts.
+An archive assessment usually starts with size: items, storage, tokens. Buyers price something narrower. AI labs mostly pay for finished tasks where an agent's answer can be checked, and the builders who buy whole archives price them on the tasks they can make from them. This repo measures the gap between size and buildable tasks on a real archive of 517,401 emails, then builds four gradable agent tasks out of real threads and audits them for leakage and shortcuts.
 
 Built with Claude Code.
 
@@ -116,7 +116,7 @@ This matters for valuing an archive. Labs training with RL want tasks a model so
 - Four tasks is a demonstration, not a benchmark; pass rates on four tasks are anecdotes. Only two Claude models were run.
 - The miner's recall (good threads it misses) is not measured; the yield estimate is a floor for this miner, from a sample of 20.
 - Token counts are estimates with an OpenAI tokenizer.
-- The corpus has no attachments, and it is very likely in model pretraining data (agent web tools were disabled).
+- The corpus has no attachments or CRM data, so it cannot test linked chains such as quote → purchase order → invoice; a real small-business archive could yield more tasks or fewer. It is also very likely in model pretraining data (agent web tools were disabled).
 - Removing personal data (redaction quality) was not measured here.
 - The corpus renders every Date header in Pacific time; cuts use the headers exactly as stored.
 
