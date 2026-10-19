@@ -1,6 +1,6 @@
 # Episodes and ground truth
 
-Two real threads, each cut at two moments, give four tasks. Difficulty was written down before any model run (see the commit history: this file and the episode JSON were committed before results existed). Full timelines with message paths are in `meeting-reschedule.json` and `gas-cut-revision.json`.
+Two real threads, each cut at two moments, give four tasks. Difficulty was written into the episode JSON files and each `task.toml` before any model run: Harbor recorded one task checksum per task, unchanged from the oracle run through every model trial. The JSON files were committed in `fe0fc5e` (10 Oct); this file and the model results were added in `c266c4d` (12 Oct). Full timelines with message paths are in `meeting-reschedule.json` and `gas-cut-revision.json`.
 
 ## Thread 1: a meeting that moved (mailbox `shackleton-s`)
 
@@ -48,4 +48,4 @@ Peoples Gas lost supply on ANR contract 104684 for gas day May 30, 2001.
 
 - **Blinded re-derivation** (`results/rederivation.json`): a separate Claude session given only the instruction and the thread emails visible at each cut, never the answer key, reached the same answer on all four tasks with high confidence.
 - **Evidence present at the cut**: each `solution/solve.sh` first checks that the decisive sentence is in the snapshot file it cites.
-- **Timestamps**: the corpus renders every Date header in Pacific time (-0700/-0800) and some times look implausible as Houston office hours. Cuts are applied to the headers exactly as stored and stated in UTC, so no answer depends on reconstructing true local send times.
+- **Timestamps**: the corpus renders every Date header with a Pacific offset (-0700/-0800). In `williams-j` (an Outlook export) the headers match the times quoted inside the emails. In `shackleton-s` (a Lotus Notes export) they run about 5 hours behind: `all_documents/11429.` is stored as 08:36 UTC and quoted as 08:36 AM Houston, so the meeting table above shows stored-header times. Cuts are applied to the headers exactly as stored, so the snapshot boundary and email order are consistent and no answer depends on true send times. The "Houston time" printed in the two meeting instructions is header time, about 5 hours earlier than the clock time inside the emails.

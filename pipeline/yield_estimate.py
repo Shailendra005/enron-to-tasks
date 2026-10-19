@@ -54,7 +54,7 @@ def estimate():
         "strict_accepted": k_strict,
         "strict_acceptance_rate_95ci_wilson": [round(slo, 3), round(shi, 3)],
         "strict_estimated_verifiable_episodes_total": [round(cands * slo), round(cands * k_strict / n), round(cands * shi)],
-        "note": "Episodes are thread-level task seeds (one thread can yield more than one cut). Estimates are [low, point, high] from the 95% Wilson interval of a hand-labelled random sample; the miner's recall (good threads it misses) is not measured.",
+        "note": "Episodes are thread-level task seeds (one thread can yield more than one cut). Estimates are [low, point, high] from the 95% Wilson interval of a random sample labelled by a separate Claude session; candidates are counted per mailbox, so a thread copied into several mailboxes counts more than once; the miner's recall (good threads it misses) is not measured.",
     }
     write_json(RESULTS / "yield.json", report)
     print(json.dumps(report, indent=2))

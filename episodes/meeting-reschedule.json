@@ -56,7 +56,7 @@
       "decisive_paths": ["shackleton-s/all_documents/11429.", "shackleton-s/all_documents/11430."],
       "evidence_quote": "3:30 pm on Thursday.",
       "post_t_values": ["Friday, June 8", "3 pm Houston", "1 pm Portland", "3:00 pm on Friday"],
-      "l4_review": "All 8 hits reviewed by hand: NYMEX/COMEX exchange notices dated 31 May and 4 Jun, an internal newsletter event on 8 June, and an April ISDA email ('until about 3 pm Houston'). None concerns this meeting; they act as natural distractors, not leaks.",
+      "l4_review": "All 8 hits read and checked by a Claude session: NYMEX/COMEX exchange notices dated 31 May and 4 Jun, an internal newsletter event on 8 June, and an April ISDA email ('until about 3 pm Houston'). None concerns this meeting; they act as natural distractors, not leaks.",
       "metadata": {
         "difficulty_explanation": "The snapshot is about 2,100 emails from 60 days of one lawyer's mailbox, with the same messages copied across several folders. The first booking in the thread is a mistake: the assistant books 3:00 PM 'following today's' meeting, on the day she writes, and is corrected within the hour to Thursday at 3:30. A reader who takes the first time mentioned, or resolves 'today' literally, gets the wrong answer, and Portland times (1:30) sit next to the Houston ones.",
         "solution_explanation": "Find the thread about the meeting with Mark Taylor, order it by Date header, and follow it to the last settled state before the cut: the assistant's '3:30 pm on Thursday' and Sara's note to Christian '3:30 Houston/1:30 Portland', which makes it Thursday 7 June 2001 at 15:30 Houston time. solve.sh checks the decisive email is in the mailbox and writes that answer citing it.",

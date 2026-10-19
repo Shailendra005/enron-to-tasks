@@ -21,7 +21,7 @@
     34,
     64
   ],
-  "note": "Episodes are thread-level task seeds (one thread can yield more than one cut). Estimates are [low, point, high] from the 95% Wilson interval of a hand-labelled random sample; the miner's recall (good threads it misses) is not measured.",
+  "note": "Episodes are thread-level task seeds (one thread can yield more than one cut). Estimates are [low, point, high] from the 95% Wilson interval of a random sample labelled by a separate Claude session; candidates are counted per mailbox, so a thread copied into several mailboxes counts more than once; the miner's recall (good threads it misses) is not measured.",
   "sample_size": 20,
   "strict_acceptance_rate_95ci_wilson": [
     0.009,
