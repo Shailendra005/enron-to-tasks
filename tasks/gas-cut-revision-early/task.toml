@@ -8,7 +8,7 @@ subcategory = "Email archive reasoning"
 tags = ["email-archive", "time-split", "superseded-information", "deal"]
 difficulty = "easy"
 difficulty_explanation = "Control task. The snapshot is about 500 emails from 90 days of a gas trader's mailbox, and at this moment exactly one email describes the May 30 cut on contract 104684. The agent still has to find it among routine nominations and report both numbers as integers with a valid citation."
-solution_explanation = "Search the mailbox for contract 104684, read the supplier's email of 31 May: the contract was cut by 6,599 MMBtu and Peoples reduced its SIQ purchase from 125,000 to 118,401. solve.sh checks that email is in the mailbox and writes those numbers citing it."
+solution_explanation = "Search the mailbox for contract 104684, read the 31 May email from Peoples Gas: the contract was cut by 6,599 MMBtu and Peoples reduced its SIQ purchase from 125,000 to 118,401. solve.sh checks that email is in the mailbox and writes those numbers citing it."
 verification_explanation = "A separate container with no network reads /app/answer.json and checks both integers exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the email that states the numbers or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
 
 [verifier]

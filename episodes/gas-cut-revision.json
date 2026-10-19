@@ -42,7 +42,7 @@
       "post_t_values": ["4,856", "120,144", "35,144"],
       "metadata": {
         "difficulty_explanation": "Control task. The snapshot is about 500 emails from 90 days of a gas trader's mailbox, and at this moment exactly one email describes the May 30 cut on contract 104684. The agent still has to find it among routine nominations and report both numbers as integers with a valid citation.",
-        "solution_explanation": "Search the mailbox for contract 104684, read the supplier's email of 31 May: the contract was cut by 6,599 MMBtu and Peoples reduced its SIQ purchase from 125,000 to 118,401. solve.sh checks that email is in the mailbox and writes those numbers citing it.",
+        "solution_explanation": "Search the mailbox for contract 104684, read the 31 May email from Peoples Gas: the contract was cut by 6,599 MMBtu and Peoples reduced its SIQ purchase from 125,000 to 118,401. solve.sh checks that email is in the mailbox and writes those numbers citing it.",
         "verification_explanation": "A separate container with no network reads /app/answer.json and checks both integers exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the email that states the numbers or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
       }
     },
@@ -57,7 +57,7 @@
       "post_t_values": [],
       "metadata": {
         "difficulty_explanation": "The first report (6,599 cut, SIQ 118,401) was revised the same afternoon after the pipeline changed its allocation (4,856 cut, SIQ 120,144). Around it sit look-alike numbers: Enron's own per-contract cuts that add up to 4,856, delivered amounts of 33,401 and 35,144, and later emails in the same style for June 3 and June 5 with their own cuts and SIQ figures. Taking the first, the latest or the most frequent number in the thread gives a wrong answer.",
-        "solution_explanation": "Collect every email about gas day May 30 on contract 104684, order them by Date header, and take the last statement before the cut: the supplier's 19:50 UTC revision 'The May 30th cut ... is now 4,856 MMBtu' and 'Therefore, 125,000 of SIQ becomes 120,144 for May 30th.' Ignore the June 3 and June 5 emails, which are other gas days. solve.sh checks that email is in the mailbox and writes 4,856 and 120,144 citing it.",
+        "solution_explanation": "Collect every email about gas day May 30 on contract 104684, order them by Date header, and take the last statement before the cut: the 19:50 UTC revision from Peoples Gas 'The May 30th cut ... is now 4,856 MMBtu' and 'Therefore, 125,000 of SIQ becomes 120,144 for May 30th.' Ignore the June 3 and June 5 emails, which are other gas days. solve.sh checks that email is in the mailbox and writes 4,856 and 120,144 citing it.",
         "verification_explanation": "A separate container with no network reads /app/answer.json and checks both integers exactly, the JSON shape, and the citations: 1 to 5 Message-IDs that all exist in the snapshot, at least one of which is the revision email or a duplicate copy. Missing, symlinked, malformed or oversized answers score 0."
       }
     }
